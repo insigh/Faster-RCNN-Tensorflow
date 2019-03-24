@@ -52,6 +52,8 @@ for year in ['2018']:
     for split in ['test']:
         name = 'od_{}_{}'.format(year, split)
         __sets[name] = (lambda split=split, year=year: od(split, year))
+        name = 'fovea_{}_{}'.format(year, split)
+        __sets[name] = (lambda split=split, year=year: od(split, year))
 
 
 def get_imdb(name):
