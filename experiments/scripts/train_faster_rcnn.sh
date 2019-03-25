@@ -52,7 +52,7 @@ case ${DATASET} in
     TEST_IMDB="fovea_2018_minval"
     STEPSIZE="[50000]"
     ITERS=100000
-    ANCHORS="[4,6,8,10]"
+    ANCHORS="[4,8,16,32]"
     RATIOS="[0.9,1,1.1]"
     ;;
    unified)
@@ -60,7 +60,7 @@ case ${DATASET} in
     TEST_IMDB="unified_2018_minval"
     STEPSIZE="[50000]"
     ITERS=100000
-    ANCHORS="[4,6,8,10]"
+    ANCHORS="[4,8,16,32]"
     RATIOS="[0.8,1,1.2]"
     ;;
   *)
