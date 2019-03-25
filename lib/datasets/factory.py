@@ -15,6 +15,7 @@ from datasets.pascal_voc import pascal_voc
 from datasets.coco import coco
 from datasets.od import od
 from datasets.fovea import fovea
+from datasets.unified import unified
 import numpy as np
 
 # Set up voc_<year>_<split> 
@@ -48,12 +49,19 @@ for year in ['2018']:
         name = 'fovea_{}_{}'.format(year, split)
         __sets[name] = (lambda split=split, year=year: fovea(split, year))
 
+        name = 'unified_{}_{}'.format(year, split)
+        __sets[name] = (lambda split=split, year=year: unified(split, year))
+
 for year in ['2018']:
     for split in ['test']:
         name = 'od_{}_{}'.format(year, split)
         __sets[name] = (lambda split=split, year=year: od(split, year))
+
         name = 'fovea_{}_{}'.format(year, split)
         __sets[name] = (lambda split=split, year=year: fovea(split, year))
+
+        name = 'unified_{}_{}'.format(year, split)
+        __sets[name] = (lambda split=split, year=year: unified(split, year))
 
 
 def get_imdb(name):

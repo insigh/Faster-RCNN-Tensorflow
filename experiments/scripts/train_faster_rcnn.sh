@@ -55,6 +55,14 @@ case ${DATASET} in
     ANCHORS="[4,6,8,10]"
     RATIOS="[0.9,1,1.1]"
     ;;
+   unified)
+    TRAIN_IMDB="unified_2018_train+unified_2018_val"
+    TEST_IMDB="unified_2018_minval"
+    STEPSIZE="[50000]"
+    ITERS=100000
+    ANCHORS="[4,6,8,10]"
+    RATIOS="[0.8,1,1.2]"
+    ;;
   *)
     echo "No dataset given"
     exit
