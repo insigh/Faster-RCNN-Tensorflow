@@ -58,9 +58,9 @@ case ${DATASET} in
    unified)
     TRAIN_IMDB="unified_2018_train+unified_2018_val"
     TEST_IMDB="unified_2018_minval"
-    STEPSIZE="[50000]"
-    ITERS=100000
-    ANCHORS="[4,8,16,32]"
+    STEPSIZE="[35000]"
+    ITERS=70000
+    ANCHORS="[4,6,8,10]"
     RATIOS="[0.8,1,1.2]"
     ;;
   *)
