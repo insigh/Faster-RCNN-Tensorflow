@@ -38,7 +38,7 @@ case ${DATASET} in
     ;;
    od)
     TRAIN_IMDB="od_2018_train+od_2018_val"
-    TEST_IMDB="od_2018_minval"
+    TEST_IMDB="od_2018_test"
     ITERS=70000
     ANCHORS="[4,6,8,10]"
     RATIOS="[0.8,1,1.2]"
